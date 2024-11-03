@@ -1,0 +1,4 @@
+1
+
+# Write at First line >>> 1 = for WHOLE SALE; OR 2 = For RETAIL SALE ;
+ 1 is Default Value 
