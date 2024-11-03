@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rms Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Sale and Purchase Inventory For All Kind of Trade, Develop Utility Software "/>
+  <meta name="keywords" content="RMS, RMS SOFT, RMS Billing Software, Sunil Gupta,  ERP, Pharmaceutical WholeSale Inventory">
+  <meta name="Author" content="Sunil Gupta, ssunilgupta22@gmail.com">
+  <link rel="shortcut icon" type="image/ico" href="../img/myicon.ico"/>
+  <link href="mydoc.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="header">RMS Documents</div>
+<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+<label for="openSidebarMenu" class="sidebarIconToggle">
+<div id="buggerbar1" class="spinner diagonal part-1" onclick="onsidebarMenu()"></div>
+<div id="buggerbar2" class="spinner horizontal" onclick="onsidebarMenu()"></div>
+<div id="buggerbar3" class="spinner diagonal part-2" onclick="onsidebarMenu()"></div>
+</label>
+  
+<div id="sidebarMenu"><ul class="sidebarMenuInner"></ul></div>
+
+<div id='center' class="main center">
+  <div class="header2">
+    <a class ="pnnav" href="https://www.rmssoft.co.in/index.html">&nbsp; Home &nbsp;</a>
+    <a class ="pnnav" href="https://www.rmssoft.co.in/rmsdoc.html">Document</a>
+    <a class ="pnnav" href="https://www.rmssoft.co.in/services.html">Services</a>
+    <a class ="pnnav" href="https://www.rmssoft.co.in/rmsdownloadform.html">Download</a>
+  </div>
+
+<div class="mainInner" onclick="onsidebarMenuClose()">
+<div class="mydoccontent">
+    <br><br>
+    <h2>BackUp and Restore DATA</h2>
+    <br>
+   
+  <pre>(1): On Front Panel Click or 
+  Press Enter <mark>BACKUP DATA</mark> 
+  
+  अपना कार्य ख़तम करने के पश्चात, 
+  BACK-UP अवश्य करें। 
+  जिससे आप का कार्य/DATA हमेशा सुरक्षित रहेगा।   
+  Front Panel पर BACKUP DATA का बटन दबाएं ।
+
+  BACK-UP अपनेआप  RMSSOFT/win_rms/RMS_BACKUP/mrms.sql  डायरेक्टरी  में चला जायेगा, 
+    वहां से आप mrms.sql को कॉपी कर के कहीं दूसरी जगह रख लें, 
+    जो DATA RESTORE करते समय काम आएगी।
+    
+  </pre>
+   
+  <img src="./img/simg/backupdata.JPG" style="width:90%" alt="image0"> 
+
+<pre>(2): Select Directory Path, 
+  Where you want to save BackUP.
+  Default Path :
+  RMSSOFT/win_rms/RMS_BACKUP/mrms.sql
+  [ आप जहाँ चाहें अपने हिसाब से BACKUP FILE(mrms.sql) का 
+    डायरेक्टरी लोकेशन/Path चुन/Select सकते हैं । ]
+  
+  Always Take BackUP Before Exit.
+</pre>
+     
+<img src="./img/simg/restoredata.JPG" style="width:90%" alt="image1"> 
+    
+<pre>(3): If You want to Restore DATA
+    Press <mark>RESTORE DATA button</mark>,
+    Select Directory Where mrms.sql file exists
+    Press Enter >> RMS will Restore >> Restart RMS
+    
+    अगर आप को अपना पुराना डाटा फिर से  LOAD करना है तो RESTORE DATA का बटन दबाना होगा । 
+    फिर mrms.sql, जहाँ पर भी कंप्यूटर में रखी हो वहां का लोकेशन/Path दे कर OK का बटन दबाएं,
+    [ बेहतर यही होता है की जिस डायरेक्टरी में RMSSOFT है mrms.sql भी वहीँ पर रखी जाये ]
+    RMSSOFT बंद कर के दुबारा स्टार्ट करें आप का पुराना डाटा आ जायेगा ।   
+</pre>
+    
+
+    </div>
+  
+  </div>
+  
+  <div>
+     <ol>
+        <a class="pnnav" href="./ledger.html">&nbsp; &laquo; Previous &nbsp; &nbsp;</a> 
+        <a class="pnnav" href="./dataerrorcheck.html">&nbsp; &nbsp; &nbsp; Next &raquo; &nbsp; &nbsp;</a> 
+      </ol>
+  </div>
+  <div>
+     <footer class="mydocfooter">&copy;RMSSOFT 
+      ssunilgupta22@rmssoft.co.in</footer> 
+  </div>
+</div>
+
+<script src="mmy.js"></script>
+
+</body>
+</html>

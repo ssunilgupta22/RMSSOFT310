@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rms Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Sale and Purchase Inventory For All Kind of Trade, Develop Utility Software "/>
+  <meta name="keywords" content="RMS, RMS SOFT, RMS Billing Software, Sunil Gupta,  ERP, Pharmaceutical WholeSale Inventory">
+  <meta name="Author" content="Sunil Gupta, ssunilgupta22@gmail.com">
+  <link rel="shortcut icon" type="image/ico" href="../img/myicon.ico"/>
+  <link href="mydoc.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="header">RMS Documents</div>
+<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+<label for="openSidebarMenu" class="sidebarIconToggle">
+<div id="buggerbar1" class="spinner diagonal part-1" onclick="onsidebarMenu()"></div>
+<div id="buggerbar2" class="spinner horizontal" onclick="onsidebarMenu()"></div>
+<div id="buggerbar3" class="spinner diagonal part-2" onclick="onsidebarMenu()"></div>
+</label>
+  
+<div id="sidebarMenu"><ul class="sidebarMenuInner"></ul></div>
+
+<div id='center' class="main center">
+  <div class="header2">
+    <a class ="pnnav" href="https://www.rmssoft.co.in/index.html">&nbsp; Home &nbsp;</a>
+    <a class ="pnnav" href="https://www.rmssoft.co.in/rmsdoc.html">Document</a>
+    <a class ="pnnav" href="https://www.rmssoft.co.in/services.html">Services</a>
+    <a class ="pnnav" href="https://www.rmssoft.co.in/rmsdownloadform.html">Download</a>
+  </div>
+
+<div class="mainInner" onclick="onsidebarMenuClose()">
+<div class="mydoccontent">
+  <br><br>
+  <h2>Stock Adjustments</h2>
+  <br>
+  <pre>(1): Go to Master(top left in MenuBar)
+       Click Master > Stock Adjustment</pre>
+ <img src="./img/openac/master.JPG" style="width:40%" alt="image0" >
+
+ <pre>(2): Write Item Name in Find Item Field >> Show Items Name Below </pre>
+ <img src="./img/simg/stockadj.JPG" style="width:60%" alt="image1"> 
+ 
+ <pre>(3): Press Enter if You want to Edit Stock </pre>
+ <pre>(4): Write Quantity in Adjust Qty Column (Press - minus to Decrease ) 
+     Press Enter will change Total Qty</pre>
+ <pre>(5): Press TAB, Focus will Move to SAVE Button >> Press SAVE </pre>
+ <pre>(6): ShortCut is also available directly from Sale Panel,
+     When cursor on Qty (grid table) Press F9 (Function Key) will Open this Panel, 
+     Edit and then Close.</pre>
+ <pre>(7): ** Item Will Not Show here Which Never Purchased or have ZERO Stock </pre>
+ <pre>(8): You Can Delete Stock related to Particular Batch,
+     Move Cursor in Delete Column >> Use Mouse Left Double Click Shows YES 
+     ** Write 0 in Adjust Qty Column Before Press Save, Mouse Right Click in Delete Column 
+     Show NO, 
+     ( Will Not Delete Batch Stock), Blank in Delete Column Field Will Never Delete Any Stock </pre>
+ <pre>(9): Delete Old Stock : this will delete all batch stock from all items at once, 
+     aplicable fo those items have more than TWO Batches, Recent Two batches will Not Delete.
+     ** Use this option if you have 'garbage' Batches, this action may show 'None' in 
+     Batch column when you search Old Bills. Use this carefully.</pre>
+
+</div>
+  </div>
+  <div>
+     <ol>
+        <a class="pnnav" href="./searchpursale.html">&nbsp; &laquo; Previous &nbsp; &nbsp;</a> 
+        <a class="pnnav" href="./gstrreports.html">&nbsp; &nbsp; &nbsp; Next &raquo; &nbsp; &nbsp;</a> 
+      </ol>
+  </div>
+  <div>
+     <footer class="mydocfooter">&copy;RMSSOFT 
+      ssunilgupta22@rmssoft.co.in</footer> 
+  </div>
+</div>
+
+<script src="mmy.js"></script>
+
+</body>
+</html>
