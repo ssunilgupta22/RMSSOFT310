@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rms Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Sale and Purchase Inventory For All Kind of Trade, Develop Utility Software "/>
+  <meta name="keywords" content="RMS, RMS SOFT, RMS Billing Software, Sunil Gupta,  ERP, Pharmaceutical WholeSale Inventory">
+  <meta name="Author" content="Sunil Gupta, ssunilgupta22@gmail.com">
+  <link rel="shortcut icon" type="image/ico" href="../img/myicon.ico"/>
+  <link href="mydoc.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="header">RMS Documents</div>
+<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+<label for="openSidebarMenu" class="sidebarIconToggle">
+<div id="buggerbar1" class="spinner diagonal part-1" onclick="onsidebarMenu()"></div>
+<div id="buggerbar2" class="spinner horizontal" onclick="onsidebarMenu()"></div>
+<div id="buggerbar3" class="spinner diagonal part-2" onclick="onsidebarMenu()"></div>
+</label>
+  
+<div id="sidebarMenu"><ul class="sidebarMenuInner"></ul></div>
+
+<div id='center' class="main center">
+  <div class="header2">
+    <a class ="pnnav" href="https://www.rmssoft.co.in/index.html">&nbsp; Home &nbsp;</a>
+    <a class ="pnnav" href="https://www.rmssoft.co.in/rmsdoc.html">Document</a>
+    <a class ="pnnav" href="https://www.rmssoft.co.in/services.html">Services</a>
+    <a class ="pnnav" href="https://www.rmssoft.co.in/rmsdownloadform.html">Download</a>
+  </div>
+
+<div class="mainInner" onclick="onsidebarMenuClose()">  
+<div class="mydoccontent">
+    <br><br>
+    <h2>Add/Modify Items</h2>
+    <br>  
+    <pre>(1): Go to Master (top left in MenuBar); Click Master
+    Add/Modify Items</pre>
+ <img src="./img/openac/master.JPG" style="width:60%" alt="image0" >
+
+ <pre>(2): Press ADD Button to Activate Panel;</pre>
+ <img src="./img/simg/itementry.JPG" style="width:60%" alt="image1"> 
+ 
+ <pre>(3): Write Items Name (Avoid Dublicate Name of Items);
+    नया Item नाम लिखते समय दाहिने साइड Box में मौजूदा Item के नाम दिखाई देंगे, 
+    जिससे एक ही नाम के दो Item नहीं हो पाएंगे,
+    नया Item बनाते समय हमेशा ध्यान दें। 
+    rmssoft Dublicate नाम स्वीकार नहीं करता।    
+ </pre>
+ <pre>(4): Select UNIT like (PACK, PCS, BOTT, ) etc.
+     You can Define Customized Units, Go to Setting Panel Write and SAVE Setting Panel</pre>
+ <pre>(5): Write Packing Like 1, 1*1, 1KG, 1ML, XL, TAB, BOTT, CAP, VIAL etc..
+    Medicine Retail में Pack पर विशेष ध्यान देना होगा, 
+    Medicine Retail Pack देख कर ही Strip/Pack को एक TAB/CAP के rate में बदलता है। 
+    जैसे किसी Medicine का Pack 1*15 है तो 
+    rmssoft इस पैक को 15 से divide कर प्रत्येक TAB/CAP का रेट निकाल कर Bill Calculation करेगा। 
+    Packing लिखते समय * का उपयोग करें x मान्य नहीं होगा 1*10 सही है 1x10 गलत है।         
+ </pre>
+ <pre>(6): Item Description, You can add item discrption or information here 
+    अगर  किसी Item के साथ अन्य जानकारी भी SALE BILL पर Print करना चाहते हों तो,
+    यहाँ जानकारी लिखें SALE BILL पर Print होगी  
+ </pre>
+ <pre>(7): Item Placement Like RACK No: or GoDown No: Where item is Placed</pre>
+ <pre>(8): Write Item Company Name Here :
+     If Company Not Shows in Right Box List; Press Enter Make Company Option will Appear 
+     Write New Company Name, Address And Finally Save;
+     Now, Select New Item's Comapny Name;   
+     
+    अगर  Text Field मैं Company का नाम लिखने से, दाहिने साइड का Box खाली हो जा रहा है, 
+    इसका मतलब वो Company आप के Records में नहीं है, 
+    आपको यह कंपनी खोलनी पड़ेगी, Records Add करना होगा,
+    KeyBoard की Enter Key दबाने से नयी Company खोलने का Option/विकल्प आ जाता है ,
+    Company का नाम, पता भरें Enter Key दबाएं फिर SAVE Button दबाएं। 
+    अब नयी Company का नाम Text Field पर लिखने से दाहिने साइड Box में दिखाई देगा, 
+    Company पर Cursor ला कर Enter Key दबाएं 
+    कंपनी का नाम Text Field में आ जायेगा,  
+    Enter Key दबा कर आगे बढ़ें... 
+
+</pre>
+ <pre>(9): Write Purchase Price; Sale Price; MRP
+    Purchase Price, Sale Price, MRP को अवश्य लिखें, 
+    Purchase, Sale करते समय Price/Rate अपने आप सामने आ जायेगा, 
+    जिसे आप अपने हिसाब से  Purchase, Sale करते समय कभीभी बदल सकते हैं ।
+    Medicine Retail या Retail में MRP ही Sale Price होगा । 
+ </pre>
+ <pre>(10): Write TAX in form of CGST and SGST and IGST</pre>
+ <pre>(11): Write HSN Code 
+    HSN CODE सही लिखें, गलत लिखने के बाद आप उसे सही नहीं कर सकते,
+    इसलिए सही लिखें और फिर HSN CODE select करते हुए आगे बढ़ें । 
+ </pre>
+ <pre>(12): Write Supplier Name (You Purchase this item, write Any One if Item is Purchase from 
+      multiple Suppliers )</pre>
+ <pre>(13): SAVE Item (press SAVE Button)</pre>
+ <pre>(14): If You Want to Edit Item than press SEARCH button Search Item, EDIT > UPDATE
+     You Can Only DELETE Item if particular Item did not took part in any Transaction 
+     (Purchase/Sale)</pre>
+</div>
+  
+  </div>
+  
+  <div>
+     <ol>
+        <a class="pnnav" href="./openaccounts.html">&nbsp; &laquo; Previous &nbsp; &nbsp;</a> 
+        <a class="pnnav" href="./pbpsettings.html">&nbsp; &nbsp; &nbsp; Next &raquo; &nbsp; &nbsp;</a> 
+      </ol>
+  </div>
+  <div>
+     <footer class="mydocfooter">&copy;RMSSOFT 
+      ssunilgupta22@rmssoft.co.in</footer> 
+  </div>
+</div>
+
+<script src="mmy.js"></script>
+
+</body>
+</html>

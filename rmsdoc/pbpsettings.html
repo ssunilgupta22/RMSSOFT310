@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Rms Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="description" content="Sale and Purchase Inventory For All Kind of Trade, Develop Utility Software "/>
+  <meta name="keywords" content="RMS, RMS SOFT, RMS Billing Software, Sunil Gupta,  ERP, Pharmaceutical WholeSale Inventory">
+  <meta name="Author" content="Sunil Gupta, ssunilgupta22@gmail.com">
+  <link rel="shortcut icon" type="image/ico" href="../img/myicon.ico"/>
+  <link href="mydoc.css" rel="stylesheet">
+</head>
+
+<body>
+<div class="header">RMS Documents</div>
+<input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+<label for="openSidebarMenu" class="sidebarIconToggle">
+<div id="buggerbar1" class="spinner diagonal part-1" onclick="onsidebarMenu()"></div>
+<div id="buggerbar2" class="spinner horizontal" onclick="onsidebarMenu()"></div>
+<div id="buggerbar3" class="spinner diagonal part-2" onclick="onsidebarMenu()"></div>
+</label>
+  
+<div id="sidebarMenu"><ul class="sidebarMenuInner"></ul></div>
+
+<div id='center' class="main center">
+  <div class="header2">
+    <a class ="pnnav" href="https://www.rmssoft.co.in/index.html">&nbsp; Home &nbsp;</a>
+    <a class ="pnnav" href="https://www.rmssoft.co.in/rmsdoc.html">Document</a>
+    <a class ="pnnav" href="https://www.rmssoft.co.in/services.html">Services</a>
+    <a class ="pnnav" href="https://www.rmssoft.co.in/rmsdownloadform.html">Download</a>
+  </div>
+
+<div class="mainInner" onclick="onsidebarMenuClose()"> 
+<div class="mydoccontent">
+  <br><br>
+  <h2>Customize Sale Bill PrintOut Page</h2>
+  <br>
+  <pre>(1): Go to Master(top left in MenuBar)
+       Click Master > Print Bill Page Settings</pre>
+ <img src="./img/openac/master.JPG" style="width:60%" alt="image0" >
+
+ <pre>(2): LOAD Settings (Load Settings = REGULAR TAX-PAYER ; Load Comp. Sett. = Composition TAX-PAYER) </pre>
+ <img src="./img/simg/pbpsettings.JPG" style="width:60%" alt="image1"> 
+ 
+ <pre lang="hi">(3): Load Settings का बटन दबाएं Settings अपने आप Load हो जाएगी
+  (समाधान GST भरने वाले=comp Settings है; हर महिने GST भरने वाले=Reg Settings है;) 
+
+  *** अगर नई page Settings बनाना चाहते हों तो दिएगए radio buttons मे से कोई एक select करें ।  
+ </pre>
+ <pre>(4): हर टैग (प्रत्येक टैग PrintOut के लिए एक सूचना देता है) को ध्यान से पढ़ें ।
+  उदाहरण के लिए : 
+  ONDP: "Owner Name DisPlay है ",
+  OPHN: "Owner PHone Number है ",
+  OEML: "Owner EMaiL है ",
+  OGST: "Owner GST है ",
+  PNDP: "Party(Customer) Name DisPlay है ",
+  PPHN: "Party(Customer) PHone Number है ",
+  PGST: "Party(Customer) GST है ",
+
+   इसके आगे कॉलन : लगा है, यह कॉलन : सूचना देता है कि टैग पूरा हो चूका है । इसीलिए अगर कॉलन : नहीं लगाया गया है तो वह सूचना Print नहीं होगी ।
+   
+   टैग में बदलाव नहीं होना चाहिए, अगर बदलाव हुआ तो वह सूचना Print नहीं होगी ।
+   आप केवल टैग की जगह बदल सकते हैं, जहाँ चाहे रख सकते हैं, information वहीं print होगी ।
+   
+   अगर कोई टैग Print नहीं करना चाहते हों तो उसे Print रेंज के बहार लेजा कर रख दें, Save कर दें, जिससे वह टैग Print नहीं होगा । 
+
+
+   अगर किसी टैग का टाइटल देना चाहते हों या चेंज करना चाहते हों तो, 
+   टैग के आगे कोलन : के बाद अपना टाइटल लिखे/Change करें, Save करें ,  Print पर वही आएगा, जैसे :
+   ITMN:Item Name टैग को बदलना है तो,     
+   ITMN:Products Name लिखेंगे,  
+
+   
+   *** टैग repeat नहीं हो सकते, एक ही टैग दो बार या 
+   *** एक हे टैग दो जगह नहीं रखा जा सकता या लिखा जा सकता । अन्यथा Print नहीं होंगा।
+   </pre>
+
+ <pre>(5): 
+  अगर लाइन Start हुई है तो End भी होगी,
+  इसलिए दोनों टैग का हों जरूरी है 
+  _HLS01: "Horizontal Line START 1 है ",
+  _HLE01: "Horizontal Line END 1 है ",
+  _VLS01: "Vertical Line START 1 है ",
+  _VLE01: "Vertical Line END 1 है "
+
+   आप एक पेज पर 49 Line से अधिक नहीं खिंच सकते, 
+   यानि _HLS49: या _HLE49: या _VLS49: या _VLS49: से अधिक नहीं होनी चाहिए । 
+   लाइन टैग हमेशा खली बॉक्स (cell) में ही रखा जायेगा, या लिखा जायेगा, अन्यथा दोनों Print नहीं होंगे ।   
+</pre>
+
+ <pre>(6):
+   Settings अपने हिसाब से बदलें, Save करें, 
+   Export PDF कर के चेक करें, जब तक आप के हिसाब से Print Display न आजाये,
+   ये Settings एक बार ही करनी है, 
+   Page के नीचे कई सरे Options दिए गए हैं, सबको पढ़ें, 
+
+   कई टैग्स को एकसाथ मूव करने के लिए निचे दियेगये options का उपयोग करें ।   
+
+</pre>
+ <pre>(7): अगर Settings change करते समाया कुछ गलती हो गयी है 
+  तो PrintOut नहीं निकलेगा या Export PDF नहीं होगा,
+  उस समय ध्यान दें की पेज पर  
+  Radio Buttons दिए गए हैं (A4Size, A4HalfPage, 8cm Width, 6cm Width, ....), 
+  वह सब Default Settings हैं, उसे Click करें, Settings Change करें और Save करें ।
+
+ </pre>
+ <pre>(8): Make Changes carefully, Save > Close > Test Your Customized Settings via EXPORT PDF
+     EXPORT PDF (search sales save bill), 
+     After Few TEST EXPORT PDFs you can customized you Bill Format Perfectly.  </pre>
+ <pre>(9): Reg Save ; Comp. Save (which ever applied for you) </pre>
+ <pre>(10): Load Each time Your own setting Like *Load Settings ; 
+     Load Comp. Sett. And Edit > Save > Test Print </pre>
+ <pre>(11): Load Page Setting Values >> RESET DEFAULT PRINT FORMAT (if you made any mistake
+     while modifing print format, you can use given Radio Buttons) </pre>
+ <pre>(12): Delete My Sett. Button(Red) ==>> This will Erase all your Customized Bill PrintOut  
+     Settings and RMS will used its Own/Default Printout Bill Format </pre> 
+
+
+</div>
+  
+  </div>
+
+<div class="mydoccontent">
+  <label type="button" class="collapsible"> + Print-Out Page की Size को छोटा या बड़ा करने की लिए ।
+  </label>
+    <div class="content"><pre>
+      <img src="./img/ppsize22.JPG" style="width:60%" alt="image2" >
+    1. महत्वपूर्ण : Editing शुरू करने से पहले अपनी Page Settings SAVE कर लें। 
+    2. महत्वपूर्ण : सेटिंग का नाम: pgsett.ini और pgcompsett.ini
+                 (1). Page Settings का Path ==>> RMSSOFT\resources\pgsett.ini   
+                 (2). Page Settings का Path ==>> RMSSOFT\resources\pgcompsett.ini   
+    3. महत्वपूर्ण : यहीं पर एक नया Folder बना कर इसमें ये दोनों Settings (pgsett.ini और pgcompsett.ini) रख लें (SAVE) । 
+    4. महत्वपूर्ण : Print-Out Page Editing की प्रक्रिया में गलती होने की संभावना बानी रहेगी, 
+                  अतः सतर्कता से आगे बढ़ें, गलती होने के बाद। 
+      (1). Export-PDF करने पर Error का मैसेज आएगा और Page Print/Export नहीं होगा ।
+      (2). Settings Load नहीं होगी ।  
+      *** ऐसा होने पर सबसे पहले RMSSOFT को Close कर दें  अब  
+          सुरक्षित रखी गयी दोनों Settings (pgsett.ini और pgcompsett.ini) 
+          को अपने वास्तविक स्थान/Path पर Copy-Paste कर दें, 
+          अतः दुबारा RMSSOFT Start करें, और पुनः प्रयास करें।    
+      महत्वपूर्ण 4 : हर बार सेटिंग्स एडिट करने के बाद सेव करें और Export PDF कर के देखें, 
+            आप के अनुसार प्रिंट आ रहा है तो प्रिंट पेज सेटिंग का काम समाप्त करें, अन्यथा पुनः प्रयास करें। 
+    
+    =========================================================
+
+    V.Line Right Side: (Vertical Line to Right Side of Page) ये आप के पेज का दायाँ साइड है, 
+            इसे इसी छोर से कम या ज्यादा किया जा सकता है, 
+            जैसे पेज Width कम करने के लिए इस संख्या को घटाएं और पेज Width को बढ़ाने के लिए इस संख्या को भी बढ़ाएं ।   
+           " फिर "
+    Page Width : Page Width के सामने दी गयी संख्या को भी इसी अनुपात में Adjust करें । 
+ 
+    =========================================================
+
+    Page Horizontal Line: (Page Horizontal Line => For Page Height) ये आप के पेज का Top-Bottom Side है, 
+            इसे Page के Bottom निचे के छोर से कम या ज्यादा किया जा सकता है, 
+            जैसे पेज Height कम करने के लिए इस संख्या को घटाएं और पेज Height को बढ़ाने के लिए इस संख्या को भी बढ़ाएं ।   
+           " फिर "
+    Page Height : Page Height के सामने दी गयी संख्या को भी इसी अनुपात में Adjust करें । 
+    
+
+    SAVE करें ।
+    SALE BILL का EXPORT PDF कर के देखें ।
+    गड़बड़ होने पर उपरोक्त दी गयी प्रक्रिया दुबारा शुरू करें ।
+    
+    <a class="dlink" href="/static/reservePgSett.zip" target="_blank">Download PDF Print Page Settings</a>
+          सेटिंग का नाम: pgsett.ini और pgcompsett.ini रहेगा
+          ये एक .zip File है Download के बाद इसे unzip करें |
+          
+    </pre></div><br><br><br><br>
+
+  <link href="cxp.css" rel="stylesheet">
+  <script src="cxp.js"></script>
+  <div>
+     <ol>
+        <a class="pnnav" href="./itemsentry.html">&nbsp; &laquo; Previous &nbsp; &nbsp;</a> 
+        <a class="pnnav" href="./printersetup.html">&nbsp; &nbsp; &nbsp; Next &raquo; &nbsp; &nbsp;</a> 
+      </ol>
+  </div>
+  <div>
+     <footer class="mydocfooter">&copy;RMSSOFT 
+      ssunilgupta22@rmssoft.co.in</footer> 
+  </div>
+</div>
+
+<script src="mmy.js"></script>
+
+</body>
+</html>

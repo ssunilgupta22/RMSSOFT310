@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+<title>Rmssoft Register</title>
+
+<!--<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">-->
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+a {display: inline-block;
+   color: #2196F3;
+   text-align: left;
+   padding: 14px 16px;
+   text-decoration: none;}
+a:hover:not(.active){background-color: #ddd;}
+a.active{color:black; background-color: #2196F3;}
+
+.center-block {display: block;
+margin-right: auto;margin-left: auto;}
+
+h2 {text-align: center;}
+div {text-align: center;}
+input[type=text] {border: 2px inset #EBE9ED; font-size: large; font-weight: bold;
+    padding: 8px 20px; margin: 2px auto; box-sizing: border-box; width: 90%;
+  text-transform: uppercase;}
+
+
+.regForm {
+  margin: 20px auto;
+  padding: 20px;
+  width: 80%;
+  min-width: inherit;
+  font-family: "Helvetica Neue", Roboto, Arial, sans-serif;
+  color: black;
+  background: powderblue;
+}
+
+.vgap {
+     margin-bottom: 8cm;
+  }
+</style>
+
+<body >
+<div class="wrapper">
+    <header>
+      <nav class="website-nav">
+        <ul>
+          <a class ="active" href="index.html">Home</a>
+          <a class ="active" href="rmsdoc.html">RMS Doc</a>
+          <a class ="active" href="services.html">Services</a>
+        </ul>
+      </nav>
+    </header>
+</div>
+
+<!--<form action = "http://www.rmssoft.co.in/rmspage" method = "POST">-->
+<!--<form action = "http://localhost:8080/rmspage" method = "POST">-->
+<!--<form id="regForm" action="/" method="post">-->
+<form class="regForm" action = "rmspage.php" method = "POST">
+  <h2 class="center-block">Register And Download</h2>
+
+      <div>
+        <input class="center-block" id="trade" name="name" type="text"
+					placeholder="&#x1F3DB; Trader's name/Shop's name" required="">
+      </div>
+
+    <div>
+       <input class="center-block" id="add1" name="add1" type="text"
+					placeholder="&#x1F4F0; Address 1" required="">
+     </div>
+
+     <div>
+        <input class="center-block" id="add2" name="add2" type="text"
+					placeholder="&#x1F4F0; Address 2 :" required="">
+     </div>
+
+     <div style="float:center;">
+        <input class="center-block" id="email" name="email" type="text" style="text-transform: lowercase;"
+					onclick="testEmpty()" placeholder="&#x1F517; Email">
+     </div>
+
+     <div style="float:center;">
+        <input class="center-block" id="phone" name="phone" type="text"
+			placeholder="&#x1F4F1; number"
+			pattern="[1-9]{1}[0-9]{9}" title="Enter 10 digit mobile number" onkeyup="phoneval(phone)" required="">
+     </div>
+
+     <div style="float:center;">
+	     <select class="center-block" name="softval" required="">
+        <option value="" style="display:none font-size: large; font-weight: bold;
+            border: 2px inset #EBE9ED; padding: 8px 20px; margin: 2px auto; box-sizing: border-box; width: 90%;">
+        Please select Download Type</option>
+        <option value="1">Whole Sale Trade</option>
+        <option value="2">Retail Medical Shop</option>
+	      <option value="11">General Trade</option>
+	     </select>
+	      <p class="error" id="phoneinfo"></p>
+    </div>
+
+	<!-- class="w3-button w3-block w3-section w3-blue w3-ripple w3-padding" -->
+
+    <div style="float:center;">
+      <button class="center-block" type="submit" id="submitbtn"
+         style="font-size: large; font-weight: bold;" >Submit</button>
+      
+     
+      <p id="webiteminfo"><a class ="active" style="background-color:powderblue;" href="static/webitem.db" download>
+      <mark><strong>webitem.db -> DOWNLOAD to Display Medicine List Available on Web</strong></mark> </a></p>
+     
+	  <p class="vgap" id="minfo"><a class ="active" href="https://drive.google.com/uc?id=1j1-Ho2g0GZxDH_uj4e50xebuBlj1nE3M&export=download">
+      RMSSOFT27 32 bit Update-Patch </a></p>
+    </div>
+
+</form>
+
+</html>
