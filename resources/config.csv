@@ -6,7 +6,7 @@
 "BANKINFO,""PUNB15070000N A/C:150700002534,                                                     , "",,,,,,"
 Currency Decimal,2,,,,,,
 Currency Sign,Rs,,,,,,
-DATABASE,sunildb,,,,,,
+DATABASE,mrms,,,,,,
 DECIMAL_VALUE_UPTO,2
 DEFAULT_TRADE_MARGIN,0,,,,,,
 DISCOUNT,0.0
