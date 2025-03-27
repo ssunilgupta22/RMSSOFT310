@@ -1,5 +1,5 @@
 {
-    "DBERRORCHECK": false, 
-    "REMOVETAXCOLUMN": false, 
+    "DBERRORCHECK": false,
+    "REMOVETAXCOLUMN": false,
     "SYNCPARTITIONS": true
 }

@@ -1,0 +1,12 @@
+rahul med store cust bill no R00033
+
+check inv no A0003943
+Item name SYRINGE 3ML HITECH Qty:2000; Rate:1.01, NetRate:1.13
+
+check inv No A007175
+Item name SYRINGE 3ML HITECH Qty:20; Rate:100.89, NetRate:113
+
+while edit edit on 
+qty to 2000
+discout to 0.12 
+total amount remain 23021.00

@@ -1,0 +1,60 @@
+{
+    "fpsum": {
+        "pur": {
+            "month": {
+                "APRIL": 0,
+                "MAY": 0,
+                "JUNE": 0,
+                "JULY": 0,
+                "AUGUST": 0,
+                "SEPTEMBER": 0,
+                "OCTOBER": 0,
+                "NOVEMBER": 0,
+                "DECEMBER": 0,
+                "JANUARY": 0,
+                "FEBRUARY": 0,
+                "MARCH": 0
+            },
+            "purbilcount": 0,
+            "purhigh": 0,
+            "purtot": 0.0,
+            "purreturn": 0,
+            "purcash": 0,
+            "purcredit": 0,
+            "returncount": 0,
+            "pcount": 0
+        },
+        "sale": {
+            "month": {
+                "APRIL": 0,
+                "MAY": 0,
+                "JUNE": 0,
+                "JULY": 0,
+                "AUGUST": 0,
+                "SEPTEMBER": 0,
+                "OCTOBER": 0,
+                "NOVEMBER": 0,
+                "DECEMBER": 0,
+                "JANUARY": 0,
+                "FEBRUARY": 0,
+                "MARCH": 0
+            },
+            "salebilcount": 0,
+            "salehigh": 0,
+            "saletot": 0,
+            "salereturn": 0,
+            "salecash": 0,
+            "salecredit": 0,
+            "returncount": 0,
+            "pcount": 0
+        },
+        "oth": {
+            "cashtot": 0,
+            "creditor": 0,
+            "debitor": 0,
+            "bankdeptot": 0,
+            "recpt": 0,
+            "pay": 0
+        }
+    }
+}

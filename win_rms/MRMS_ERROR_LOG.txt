@@ -1,0 +1,24 @@
+
+========== Date:8:9:2023: Time:19:17:14 ==========
+
+    [[Rmss_TextCtrl_NetRate_Cal]OnText==>NetRate_Grid_Cal==>rmss_gce, 4244]
+        गलत तरीके से NetRate बदलने का प्रयास !
+        पहले Item Search करें Item Select करें, Qty लिखें, उसके बाद ही NetRate भरें |
+
+========== Date:11:11:2024: Time:17:26:34 ==========
+Successfully Downloaded : F:\RMSSOFT310\_cffi_backend.cp310-win_amd64.pyd
+
+========== Date:11:11:2024: Time:17:26:35 ==========
+Successfully Downloaded : F:\RMSSOFT310\nacl\_sodium.pyd
+
+========== Date:11:11:2024: Time:17:26:35 ==========
+Successfully Downloaded : F:\RMSSOFT310\nacl\py.typed
+
+========== Date:11:11:2024: Time:17:26:36 ==========
+Successfully Downloaded : F:\RMSSOFT310\python3.dll
+
+
+========== Date:26:3:2025: Time:18:26:46 ==========
+Error Found at Other_sett[page_line, page_size...]==>
+ [(1146, "Table 'sunildb.oth_sett' doesn't exist")] 
+ RMSSOFT Trying to FIX this

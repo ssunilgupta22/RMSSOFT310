@@ -1,12 +1,12 @@
 % EXTENDED MARGIN,0,0,,,,,
-"BANKINFO,"",    , """
+"BANKINFO,"",  , """
 "BANKINFO,"",      , """
 "BANKINFO,"",    , """
 "BANKINFO,"", , """
 "BANKINFO,""PUNB15070000N A/C:150700002534,                                                     , "",,,,,,"
 Currency Decimal,2,,,,,,
 Currency Sign,Rs,,,,,,
-DATABASE,mrms,,,,,,
+DATABASE,sunildb,,,,,,
 DECIMAL_VALUE_UPTO,2
 DEFAULT_TRADE_MARGIN,0,,,,,,
 DISCOUNT,0.0
@@ -36,7 +36,8 @@ STOCK_MESSAGE,YES
 TAXNAME,CGST,,,,,,
 TAXNAME2,SGST,,,,,,
 TAX_ON_ESTIMATE,True
-"UNIT,""TAB,CAP,PCS,BOTT"""
+"UNIT,""['PCS', 'PAIR', 'KIT', 'BOTT']"""
 "UNIT,""OINT,PCS,VIAL,BOTT,CAP,TAB"",,,,,,"
+"UNIT,""TAB,CAP,PCS,BOTT"""
 "UNIT,""['PC,'PAI,'KIT,'BOT"""
 "UNIT,""['PCS', 'PAIR', 'KIT', 'BOTT']"""
